@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: heart-disease-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    plan: free
